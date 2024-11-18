@@ -16,7 +16,7 @@ import { consultarCarrera } from "./services/adminService.js";
 
 const port = config.port
 
-cron.schedule("0 0 * * * *", () => {
+cron.schedule("* * * * * *", () => {
     consultarCarrera()
 })
 
